@@ -8,6 +8,7 @@
 
 
 6/02/2020
+
 1.What did we do? We experimented with different commands in Processing to create different shapes. We experimented with colour, size, frequency and shape.
 1. What did you learn? I learnt the basics of programming in Processing. i was able to create simple shapes. I learnt about background colours, fill colours, size and shapes.
 1. What questions do you have? For homework, i have to create a dice image. I am still struggling a bit but I will research into the parts that I am unsure about.
