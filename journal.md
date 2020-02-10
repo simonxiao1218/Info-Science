@@ -18,4 +18,4 @@
 
 1. What did we do? We made our dice image into a dice simulator that was able to give us a random number of dots between 1 and 6 whenever we "rolled" (clicked) it. We then made certain numbers more or less likely to be shown, we challenged other groups to guess which side had the bias.
 1. What did you learn? I learnt how to use the random feature, as well as applying bias and increasing or decreasing the probability of a certain outcome.
-1. 1. What questions do you have? While I have a basic idea of how to apply "bias," i am still not confident this the technique
+1. What questions do you have? While I have a basic idea of how to apply "bias," i am still not confident this the technique
