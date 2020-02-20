@@ -122,4 +122,8 @@ def barGraph():
     text("rolls:",400,590)
     text(totalRolls, 475, 590)
     
-    
+20/2/2020
+
+1. What did we do? We coded a 10 times 10 chessboard like image. We then altered the position of the black squares to create an optical illusion.
+1. What did you learn? Today I was able to get more practice into programming basic shapes and adding colours. I was also able to program repeating patterns. This was able to save me a lot of time.
+1. What questions do you have? This is not a direct question, but rather something i am unfamiliar with. I un still unfamiliar with the repeatuing patterns function. I think I need more practice programming basic repeating patterns.
