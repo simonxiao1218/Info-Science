@@ -25,6 +25,7 @@
 1. What did we do? We made our dice simulator more complex with more features. We added a counter that showed the total number of rolls. As well as a bar graph that shows the total number of rolls of each side. We also made your dice roll automatically, meaning we no longer had to manually "click" to roll. Below is the code for the dice.
 1.what did you learn? I learnt to become more confident and familiar with the program, as well as how to add the extra features.
 1.Towards the end, the bar geraph grew so large that it covered the dice. I wonder if there are any solutions to this issue.
+```.py
 # definition of variables
 one_c=0
 two_c=0
@@ -121,7 +122,7 @@ def barGraph():
     totalRolls=one_c+two_c+three_c+four_c+five_c+six_c
     text("rolls:",400,590)
     text(totalRolls, 475, 590)
-    
+```    
 20/2/2020
 
 1. What did we do? We coded a 10 times 10 chessboard like image. We then altered the position of the black squares to create an optical illusion.
