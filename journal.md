@@ -128,3 +128,39 @@ def barGraph():
 1. What did we do? We coded a 10 times 10 chessboard like image. We then altered the position of the black squares to create an optical illusion.
 1. What did you learn? Today I was able to get more practice into programming basic shapes and adding colours. I was also able to program repeating patterns. This was able to save me a lot of time.
 1. What questions do you have? This is not a direct question, but rather something i am unfamiliar with. I un still unfamiliar with the repeatuing patterns function. I think I need more practice programming basic repeating patterns.
+
+27/2/2020
+
+1. What did we do? I coded a simple illusion and created a brief presentation to the class.
+2. What did you learn? I am now more confident with simple commands in Processing. Though the illusion only consists of simple lines, it took me a lot of trial and error to figure out.
+3. What questions do you have? How do I change the colour of the all the lines?
+
+```.py
+offset=0
+def setup():
+    size (500, 500)
+    background (255)
+
+def mouseClicked():
+    global offset
+    offset-=10
+
+    
+    
+def draw():
+    global offset
+    
+    background(255)
+    
+    line(100, 100, 400, 100)
+    line(30, 50, 100, 100)
+    line(30, 150, 100, 100)
+    line(470, 50, 400, 100)
+    line(470, 150, 400, 100)
+    
+    
+    line(100, 350+offset, 400, 350+offset)
+    line(170, 300+offset, 100, 350+offset)
+    line(170, 400+offset, 100, 350+offset)
+    line(330, 300+offset, 400, 350+offset)
+    line(330, 400+offset, 400, 350+offset)
