@@ -164,11 +164,42 @@ def draw():
     line(170, 400+offset, 100, 350+offset)
     line(330, 300+offset, 400, 350+offset)
     line(330, 400+offset, 400, 350+offset)
+```
 
 
 2/3/2020
 
-1. What did we do?
-1. What did you learn?
-1. What questions do you have?
+1. What did we do? We had an introduction class to Tinkercad, we created a simple circuit imitating a working traffic light.
+1. What did you learn? I learnt the basics of programming and functions on Tinkercad, i was able to apply some coding skills I learnt on Processing to this new program.
+1. What questions do you have? I am still unfamiliar with a lot of the functions on Tinkercad. I hope to familiarise myself more with the different virtual "parts" on the website.
+
+```.c
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(5); // Wait for 5 millisecond(s)
+  digitalWrite(12, HIGH);
+  delay(900); // Wait for 900 millisecond(s)
+  digitalWrite(12, LOW);
+  delay(5); // Wait for 5 millisecond(s)
+  digitalWrite(11, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(11, LOW);
+  delay(5); // Wait for 5 millisecond(s)
+}
+
+```
+
+The imafe of the circuit is shown in Fig. 1
+![Circuit](Circuit.png)
+FIG. 1 Circuit used for the traffic light
 
