@@ -199,7 +199,7 @@ void loop()
 
 ```
 
-The imafe of the circuit is shown in Fig. 1
+The image of the circuit is shown in Fig. 1
 ![Circuit](Circuit.png)
-FIG. 1 Circuit used for the traffic light
+Fig. 1 Circuit used for the traffic light
 
