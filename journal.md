@@ -132,8 +132,8 @@ def barGraph():
 27/2/2020
 
 1. What did we do? I coded a simple illusion and created a brief presentation to the class.
-2. What did you learn? I am now more confident with simple commands in Processing. Though the illusion only consists of simple lines, it took me a lot of trial and error to figure out.
-3. What questions do you have? How do I change the colour of the all the lines?
+1. What did you learn? I am now more confident with simple commands in Processing. Though the illusion only consists of simple lines, it took me a lot of trial and error to figure out.
+1. What questions do you have? How do I change the colour of the all the lines?
 
 ```.py
 offset=0
@@ -164,3 +164,11 @@ def draw():
     line(170, 400+offset, 100, 350+offset)
     line(330, 300+offset, 400, 350+offset)
     line(330, 400+offset, 400, 350+offset)
+
+
+2/3/2020
+
+1. What did we do?
+1. What did you learn?
+1. What questions do you have?
+
