@@ -248,5 +248,5 @@ def draw():
 ```
     
 A screenshot of the simulation is shown in Fig. 1
-![Circuit](Circuit.png)
+![Simulation](Simulation.png)
 Fig. 1 Screenshot of the community simulation
