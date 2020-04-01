@@ -208,7 +208,8 @@ Fig. 1 Circuit used for the traffic light
 1. What was the task assigned? For our first e-assignment, we were tasked with creating a community simulation using processing. The community had 10 members. We had to create a border, circles to represent each member and random movements for each member. The members "interacted" when they came in contact with each other. This community interaction simulation is suppose to mirror the community scenario regarding the Wuhan Covid-19 Pandemic. 
 1.What did you learn? Instead of manually programming each community member, I learnt to use the FOR Loop function which is much more efficient.
 1.What questions did you have? What can we add to this simulation to it more realistic? Eg. clutters, colour changes (indicating healthy, infected and recovered), etc.
-1. Homework Questions: What should be some behaviours (at least 3) that we will need to include in our simulation to be a realistic approximation of the current situation in the world? Explain.
+
+Homework Questions: What should be some behaviours (at least 3) that we will need to include in our simulation to be a realistic approximation of the current situation in the world? Explain.
 Some behaviour patterns that we would need to include are groups, routines and high and low traffic areas. Groups would represent families, public transport, clubs or any other scenarios where a clear and consistent group of people would be present. Routines mirrors the routines and transportational habits that each individual has. This includes driving to work, walking home from school, etc. Finally, the simulation should not have the same population density throughout. We need to include high traffic areas (malls, office blocks, etc) and low traffic areas (forests, mountains, residential suburbs, etc) to make the simulation more realistic.
 
 ```.py
