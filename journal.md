@@ -203,3 +203,50 @@ The image of the circuit is shown in Fig. 1
 ![Circuit](Circuit.png)
 Fig. 1 Circuit used for the traffic light
 
+1/4/2020
+
+1. What was the task assigned? For our first e-assignment, we were tasked with creating a community simulation using processing. The community had 10 members. We had to create a border, circles to represent each member and random movements for each member. The members "interacted" when they came in contact with each other. This community interaction simulation is suppose to mirror the community scenario regarding the Wuhan Covid-19 Pandemic. 
+1.What did you learn? Instead of manually programming each community member, I learnt to use the FOR Loop function which is much more efficient.
+1.What questions did you have? What can we add to this simulation to it more realistic? Eg. clutters, colour changes (indicating healthy, infected and recovered), etc.
+1. Homework Questions: What should be some behaviours (at least 3) that we will need to include in our simulation to be a realistic approximation of the current situation in the world? Explain.
+Some behaviour patterns that we would need to include are groups, routines and high and low traffic areas. Groups would represent families, public transport, clubs or any other scenarios where a clear and consistent group of people would be present. Routines mirrors the routines and transportational habits that each individual has. This includes driving to work, walking home from school, etc. Finally, the simulation should not have the same population density throughout. We need to include high traffic areas (malls, office blocks, etc) and low traffic areas (forests, mountains, residential suburbs, etc) to make the simulation more realistic.
+
+```.py
+# definition of variables
+x = [300, 250, 200, 150, 100, -50, -100, -150, -200, -250,]
+y = [300, 250, 200, 150, 100, -50, -100, -150, -200, -250,]
+
+
+def setup():
+    size(500, 500) 
+    
+def draw():
+    global x, y
+    background(255)
+    strokeWeight(2)
+    
+    #create 1st individual 
+    for i in range(10):
+        circle(x[i], y[i], 40)
+        x[i] = x[i] + random(-10, 10)
+        y[i] = y[i] + random(-10, 10)
+        
+        
+        # bounderies conditions
+        if x[i] > 500: 
+            x[i] = 500
+        if x[i] < 1:
+            x[i] = 1
+        if y[i] > 500:
+            y[i] = 500
+        if y[i] < 1:
+            y[i] = 1
+    
+    
+    delay(100)
+    
+```
+    
+A screenshot of the simulation is shown in Fig. 1
+![Circuit](Circuit.png)
+Fig. 1 Screenshot of the community simulation
