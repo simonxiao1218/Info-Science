@@ -213,37 +213,41 @@ Some behaviour patterns that we would need to include are groups, routines and h
 
 ```.py
 # definition of variables
-x = [300, 250, 200, 150, 100, -50, -100, -150, -200, -250,]
-y = [300, 250, 200, 150, 100, -50, -100, -150, -200, -250,]
+x = []
+y = []
 
 
 def setup():
     size(500, 500) 
     
+    #create random individual 
+    for i in range(20):
+        x. append(random(0,500))
+        y. append(random(0,500))
+    
 def draw():
-    global x, y
+   
     background(255)
     strokeWeight(2)
+    global x, y
     
-    #create 1st individual 
-    for i in range(10):
-        circle(x[i], y[i], 40)
-        x[i] = x[i] + random(-10, 10)
-        y[i] = y[i] + random(-10, 10)
-        
-        
-        # bounderies conditions
-        if x[i] > 500: 
+    #First Individual
+    for i in range(20):
+          circle(x[i], y[i], 40)
+          x[i] = x[i] + random(-10,10)
+          y[i] = y[i] + random(-10,10)
+          
+          if x[i] > 500:
             x[i] = 500
-        if x[i] < 1:
+          if x[i] < 1:
             x[i] = 1
-        if y[i] > 500:
+          if y[i] > 500:
             y[i] = 500
-        if y[i] < 1:
+          if y[i] < 1:
             y[i] = 1
-    
-    
-    delay(100)
+        
+
+   delay(100)
     
 ```
     
