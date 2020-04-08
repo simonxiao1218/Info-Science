@@ -254,3 +254,98 @@ def draw():
 A screenshot of the simulation is shown in Fig. 1
 ![Simulation](Simulation.png)
 Fig. 1 Screenshot of the community simulation
+
+
+8/4/2020
+
+1. What was the task assigned? Along with a few minor tasks, our main task this week was to further our community simulation. I increased the population form 10 members to 20. I also added an infection indicator. I coloured all infected members red, while leaving all healthy members white. When an infected member came within a certain distance of a healthy member, the healthy member turned red, thereby being "infected."
+1. What did you learn? Along with the minor tasks, I am now confident with using the For Loop function in Python.
+1. What questions did you have? I struggled to add a real-time bar graph counter and iteration counter.
+
+```.py
+# definition of variables
+x = [100,200]
+y = [100,200]
+h = [False, True] #False=>Infected
+
+
+
+def setup():
+    size(500, 500) 
+    
+    #create random individual 
+    for i in range(20):
+        x. append(random(0,500))
+        y. append(random(0,500))
+        h. append(True) #All healthy
+        
+def distance(x1, x2, y1, y2):
+    a = (x1 - x2)
+    b = (y1 - y2)
+    c = sqrt(a**2 + b**2 ) 
+    return c
+    
+    
+def draw():
+   
+    background(255)
+    strokeWeight(2)
+    global x, y
+    
+    
+    
+    #First Individual
+    for i in range(20):
+          if h[i] == True:
+              fill(255) #healthy
+          else:
+              fill(255, 0, 0) #infected
+              
+          circle(x[i], y[i], 40)
+          #calculate the distance to each neighbour
+          for nei in range(len(x)):
+              if nei == i:
+                  continue
+              d = distance(x[i], x[nei], y[i], y[nei])
+              if d < 40 and (h[nei] == False or h[i] == False):
+                  #infection happens
+                  h[i] = False
+                  h[nei] = False
+          x[i] = x[i] + random(-10,10)
+          y[i] = y[i] + random(-10,10)
+          
+          if x[i] > 500:
+            x[i] = 500
+          if x[i] < 1:
+            x[i] = 1
+          if y[i] > 500:
+            y[i] = 500
+          if y[i] < 1:
+            y[i] = 1
+        
+
+    delay(100)
+```
+A screenshot of the simulation is shown in Fig. 1
+![Simulation](Simulation.png)
+Fig. 1 Screenshot of the community simulation
+
+```.py
+#Homework Task 1 - Bear Counter Code
+for i in range(1,101):
+    print str(i)+"bear"
+```
+
+```.py
+#Homework Task 2 - The year is xxxx
+for i in range(1900,2001):
+    print "The year is " + str(i)
+```
+
+```py.
+#Homework Task 3 - Celcius to Farenheit Converter Table
+for celcius in range(0,101):
+    farenheit = 9 / 5 * celcius + 32
+    print str(celcius) + " C are " + str(farenheit) + " F"
+```
+
