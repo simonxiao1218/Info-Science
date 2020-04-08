@@ -327,7 +327,7 @@ def draw():
     delay(100)
 ```
 A screenshot of the simulation is shown in Fig. 1
-![Screen Shot 2020-04-09 at 11.34.51 AM](Screen Shot 2020-04-09 at 11.34.51 AM.png)
+(Screen Shot 2020-04-09 at 11.34.51 AM.png)
 Fig. 1 Screenshot of the community simulation
 
 ```.py
