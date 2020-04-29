@@ -347,5 +347,118 @@ for i in range(1900,2001):
 for celcius in range(0,101):
     farenheit = 9 / 5 * celcius + 32
     print str(celcius) + " C are " + str(farenheit) + " F"
+    
+   
+```
+
+
+24/4/2020
+
+1. What was the task assigned? This week we further developed our Covid-19 Simulation. In addition to "sick" and "healthy" community memebers, we also added a "recovered" option. 
+1. What did you learn? The task this week was difficult and it was a hard learning experience for me, where I was met with a lot of challenges and failures. After consulting a few of my peers, I was able to alter and fix my code.
+1. What questions do you still have? To make our simulation more realistic, I think we should increase the sample size and add a "deceased" option. I am unsure how to create a "deceased" option where the community member is eliminated.
+
+Below is the code for this week.
+
+```
+#defintions of variables
+x = [] 
+y= []
+h = ["Healthy", "Sick"] #string is always quotation mark
+days = [50,-1]
+hi = 0 #healthy individual
+uh = 0 #unhealthy individual
+ri = 0 #recovered individual
+c = 0 #counter for iterations 
+bar = 0 #bargraph
+def setup():
+    size(500,500)
+    for n in range(25):
+        x.append(random(0, 500))
+        y.append(random(0, 500))
+        h.append("Healthy") #All Health 
+        barGraph()
+        days.append(50)
+def distance(x1,x2,y1,y2):
+    a = (x1 - x2) 
+    b = (y1- y2)
+    c = sqrt(a**2 + b**2) 
+    return c #output of function 
+def draw():
+    global x, y, hi, uh, c, bar, ri, days 
+    background(255)
+    strokeWeight(2)
+    barGraph()
+    c += 1
+    if uh == 25:
+        c -= 1
+    #First individual 
+    for i in range(len(x)):
+        if h[i] == "Healthy":
+            fill(255)
+        elif h[i] == "Recovered":
+            fill(152, 176, 245)
+        else:
+            fill(255,0,0) #infected
+    #Change individuals to recovered
+        if h[i] == "Sick":
+            days[i] -= 1 
+        if days[i] == 0:
+        # 1 - become "Recovered" 
+            h[i] = "Recovered"
+        circle(x[i],y[i],40)
+        #move individuals
+        x[i] = x[i] + random(-10,10)
+        y[i] = y[i] + random(-10,10)
+        #calculate the distance from the neighbour 
+        for nei in range(25):
+            if nei == i:
+                continue 
+            d = distance(x[i],x[nei],y[i],y[nei]) 
+            if d < 40 and(h[nei] == "Sick"  or h[i] == "Sick"): 
+                if h[i] == "Healthy":
+                    #infection happens
+                    h[i] = "Sick"
+                    h[nei] = "Sick"
+                    days[nei] = 50
+            #boundaries 
+        if x[i] > 500:
+            x[i] = 500
+        if x[i] < 0:
+            x[i] = 0 
+        if y[i] > 500:
+            y[i] = 500
+        if y[i] < 0:
+            y[i] = 0
+        delay(5) 
+    uh = 0
+    hi = 0
+    ri = 0
+    for bar in range (25):
+        if h[bar] == "Sick":
+            uh += 1 
+        elif h[bar] == "Healthy":
+            hi += 1
+            #recovered individuals
+        elif h[bar] == "Recovered":
+            ri += 1 
+    textSize(10)
+    fill(0)
+    text('Infected', 445, 478)
+    text('Healthy', 445, 458)
+    text(c, 80,470)
+    text("Iteration #:", 20, 470)
+    text("Recovered",445,438)
+def barGraph():
+    strokeWeight(1)
+    stroke(0)
+    fill(255,0,0)
+    rect(440,470, - uh*2,8)
+    fill(255)
+    rect(440,450, - hi*2,8) 
+    fill(231,123,125)
+    rect(440,430, - ri*2,8)
+    #add bargraph for recovered
+    
 ```
 
