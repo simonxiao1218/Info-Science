@@ -462,3 +462,8 @@ def barGraph():
     
 ```
 
+5/5/2020
+
+1. What was the task assigned? This week, we were met with an introduction to cryptology. While I am not knowledgable in this feild, it is a topic that interests me. We were assigned with a basic code to decypher. It was a little difficult at the start, but it was enjoyable once I got the hang of it.
+1. What did you learn? I learnt about the basics of cryptology and I was introduced to the Caesar Cypher.
+1. What questions do you still have? How is Cryptology used in everyday life? How can we incororate cryptology to better secure and protect oursleves online?
